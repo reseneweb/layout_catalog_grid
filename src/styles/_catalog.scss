@@ -7,7 +7,7 @@
   margin: 0 auto;
 
   &__card {
-    display: grid;
+    display: flex;
     justify-content: center;
     align-items: center;
     width: 200px;
@@ -17,19 +17,19 @@
   }
 
   @media (max-width: 1023px) {
-    .catalog {
+    & {
       grid-template-columns: auto auto auto;
     }
   }
   
   @media (max-width: 767px) {
-    .catalog {
+    & {
       grid-template-columns: auto auto;
     }
   }
   
   @media (max-width: 487px) {
-    .catalog {
+    & {
       grid-template-columns: auto;
     }
   }
